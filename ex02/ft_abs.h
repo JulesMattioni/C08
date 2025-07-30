@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_boolean.h                                       :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmattion <jmattion@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/16 13:34:23 by jmattion          #+#    #+#             */
-/*   Updated: 2025/07/22 11:15:33 by jmattion         ###   ########.fr       */
+/*   Created: 2025/07/21 11:11:34 by jmattion          #+#    #+#             */
+/*   Updated: 2025/07/21 13:36:13 by jmattion         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_BOOLEAN_H
-# define FT_BOOLEAN_H
-# include <unistd.h>
-# define EVEN(nbr) !(nbr % 2)
-# define TRUE 1
-# define FALSE 0
-# define EVEN_MSG "I have an even number of arguments.\n"
-# define ODD_MSG "I have an odd number of arguments.\n"
-# define SUCCESS 0
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-typedef int	t_bool;
-
-void	ft_putstr(char *str);
-t_bool	ft_is_even(int nbr);
+# define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
 
 #endif
